@@ -15,18 +15,14 @@
       </div>
 
       <div class="author-year">
-
         <div class="author">
           <?php echo $value["author"]; ?>
         </div>
-
         <div class="year">
           <?php echo $value["year"]; ?>
-        </div>
-        
+        </div> 
       </div>
-
-
+      
     </div>
 
   <?php } ?>
