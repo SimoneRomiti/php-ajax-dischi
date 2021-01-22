@@ -8,30 +8,48 @@ body {
   background-color: #121212;
 }
 
+.selection {
+  text-align: center;
+  margin-top: calc(10vh + 30px);
+}
+.selection label {
+  color: white;
+}
+.selection select {
+  width: 80px;
+  padding: 5px 10px;
+}
+
 header {
   height: 10vh;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   padding: 0 130px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 header img {
   height: 8vh;
 }
 
 main {
-  padding: 50px 100px;
+  padding: 0 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 main .album {
+  text-align: center;
   width: calc(100% / 4 - 60px);
   height: 400px;
   margin: 30px;
-  background-color: black;
+  background-color: #2A2A2A;
   color: white;
   padding: 20px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -39,4 +57,13 @@ main .album {
 }
 main .album img {
   width: 100%;
+}
+main .album h3 {
+  font-size: 22px;
+}
+main .album .author-year {
+  color: darkgrey;
+}
+main .album .author-year .author {
+  font-weight: 700;
 }

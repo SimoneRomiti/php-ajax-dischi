@@ -6,4 +6,17 @@
 
 body{
   background-color: $backgroundBody;
+  // font-family: 'Lato', sans-serif;
+}
+
+.selection{
+  text-align: center;
+  margin-top: calc(10vh + 30px);
+  label{
+    color: white;
+  }
+  select{
+    width: 80px;
+    padding: 5px 10px;
+  }
 }

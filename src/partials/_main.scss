@@ -1,21 +1,32 @@
 main{
-	padding: 50px $horizontalPadding;
+	padding: 0 $horizontalPadding;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	.album{
+		text-align: center;
 		width: calc(100% / 4 - 60px);
 		height: 400px;
 		margin: $marginAlbum;
-		background-color: black;
+		background-color: #2A2A2A;
 		color: white;
 		padding: 20px;
+		border-radius: 10px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
 		img{
 			width: 100%;
+		}
+		h3{
+			font-size: 22px;
+		}
+		.author-year{
+			color: darkgrey;
+			.author{
+				font-weight: 700;
+			}
 		}
 	}
 }

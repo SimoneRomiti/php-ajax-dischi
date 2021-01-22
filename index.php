@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -16,6 +14,17 @@
   <!-- header -->
   <?php include "partials/header.php"; ?>
   <!-- /header -->
+
+  <div class="selection">
+    <label for="">SELEZIONA GENERE</label>
+    <select name="" id="">
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+    </select>
+  </div>
+
 
   <!-- main -->
   <?php include "partials/main.php"; ?>
