@@ -1,24 +1,24 @@
 <main>
-  <?php 
-    foreach ($database as $key => $value) {
+  <?php
+  foreach ($database as $key => $value) {
   ?>
-  
-  <div class="poster">
-    <img src="https://images-na.ssl-images-amazon.com/images/I/81r3FVfNG3L._SY355_.jpg" alt="">
 
-    <div class="title">
-      PROVA
+    <div class="album">
+      <img src="<?php echo $value["poster"] ?> " alt="">
+
+      <div class="title">
+        <?php echo $value["title"]; ?>
+      </div>
+
+      <div class="author">
+        <?php echo $value["author"]; ?>
+      </div>
+
+      <div class="year">
+        <?php echo $value["year"]; ?>
+      </div>
     </div>
 
-    <div class="author">
-      Bon Jovi
-    </div>
-
-    <div class="year">
-      2000
-    </div>
-  </div>
-
-  <?php } ?> 
+  <?php } ?>
 
 </main>

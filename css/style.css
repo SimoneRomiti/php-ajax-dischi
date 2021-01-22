@@ -23,8 +23,9 @@ main {
   padding: 50px 100px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
-main .poster {
+main .album {
   width: calc(100% / 4 - 60px);
   height: 400px;
   margin: 30px;
@@ -36,6 +37,6 @@ main .poster {
   justify-content: space-around;
   align-items: center;
 }
-main .poster img {
+main .album img {
   width: 100%;
 }

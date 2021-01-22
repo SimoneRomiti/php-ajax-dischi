@@ -2,10 +2,11 @@ main{
 	padding: 50px $horizontalPadding;
 	display: flex;
 	flex-wrap: wrap;
-	.poster{
+	justify-content: center;
+	.album{
 		width: calc(100% / 4 - 60px);
 		height: 400px;
-		margin: $marginPoster;
+		margin: $marginAlbum;
 		background-color: black;
 		color: white;
 		padding: 20px;
