@@ -12,26 +12,27 @@
   <?php include "db.php"; ?>
 
   <!-- header -->
-  <?php include "partials/header.php"; ?>
+  <?php include "template/header.php"; ?>
   <!-- /header -->
 
   <div class="selection">
     <label for="">SELEZIONA GENERE</label>
     <select name="" id="">
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
+      <option value="">ALL</option>
+      <option value="">Pop</option>
+      <option value="">Jazz</option>
+      <option value="">Metal</option>
+      <option value="">Rock</option>
     </select>
   </div>
 
 
   <!-- main -->
-  <?php include "partials/main.php"; ?>
+  <?php include "template/main.php"; ?>
   <!-- /main -->
 
   <!-- footer -->
-  <?php include "partials/footer.php"; ?>
+  <?php include "template/footer.php"; ?>
   <!-- /footer -->
 
 

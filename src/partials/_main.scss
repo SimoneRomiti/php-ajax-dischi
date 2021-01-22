@@ -8,7 +8,7 @@ main{
 		width: calc(100% / 4 - 60px);
 		height: 400px;
 		margin: $marginAlbum;
-		background-color: #2A2A2A;
+		background-color: $backgroundAlbum;
 		color: white;
 		padding: 20px;
 		border-radius: 10px;
