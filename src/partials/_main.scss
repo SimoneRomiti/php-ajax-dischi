@@ -1,0 +1,20 @@
+main{
+	padding: 50px $horizontalPadding;
+	display: flex;
+	flex-wrap: wrap;
+	.poster{
+		width: calc(100% / 4 - 60px);
+		height: 400px;
+		margin: $marginPoster;
+		background-color: black;
+		color: white;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		img{
+			width: 100%;
+		}
+	}
+}

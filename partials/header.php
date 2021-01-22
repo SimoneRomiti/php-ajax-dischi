@@ -1,3 +1,4 @@
 <header>
-  <h1>TITOLO IMPORTATO</h1>
+  <img src="img/spotify.png" alt="">
+  
 </header>

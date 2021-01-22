@@ -1,23 +1,31 @@
-<?php
 
-
-
-?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-    <?php include "partials/header.php" ?>
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <title></title>
+</head>
 
-    <?php include "partials/main.php" ?>
+<body>
 
-    <?php include "partials/footer.php" ?>
+  <?php include "db.php"; ?>
 
-  </body>
+  <!-- header -->
+  <?php include "partials/header.php"; ?>
+  <!-- /header -->
+
+  <!-- main -->
+  <?php include "partials/main.php"; ?>
+  <!-- /main -->
+
+  <!-- footer -->
+  <?php include "partials/footer.php"; ?>
+  <!-- /footer -->
+
+
+</body>
+
 </html>
