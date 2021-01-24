@@ -45,7 +45,7 @@ main .album {
   text-align: center;
   width: calc(100% / 3 - 60px);
   min-width: 200px;
-  height: 60vh;
+  height: 400px;
   margin: 30px;
   background-color: black;
   color: white;
