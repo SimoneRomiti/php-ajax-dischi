@@ -1,6 +1,6 @@
 footer{
-	height: 10vh;
-	margin-top: 30px;
+	height: $header_footerHeight;
+	margin-top: $marginElements;
 	color: white;
 	background-color: $backgroundAlbum;
 	display: flex;

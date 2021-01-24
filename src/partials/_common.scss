@@ -10,7 +10,7 @@ body{
 
 .selection{
   text-align: center;
-  margin-top: calc(10vh + 30px);
+  margin-top: calc(#{$header_footerHeight} + #{$marginElements});
   label{
     color: white;
   }

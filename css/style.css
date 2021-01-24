@@ -43,25 +43,25 @@ main {
 }
 main .album {
   text-align: center;
-  width: calc(100% / 3 - 60px);
+  width: calc(100% / 3 - (30px * 2));
   min-width: 200px;
-  height: 400px;
+  height: 360px;
   margin: 30px;
   background-color: black;
   color: white;
-  padding: 20px;
+  padding: 25px;
   border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 main .album img {
   width: 100%;
 }
 main .album h3 {
-  font-size: 22px;
+  font-size: 20px;
 }
 main .album .author-year {
   color: darkgrey;
