@@ -5,14 +5,16 @@ main{
 	justify-content: center;
 	.album{
 		text-align: center;
-		width: calc(100% / 4 - 60px);
-		height: 400px;
+		width: calc(100% / 3 - 60px);
+		min-width: 200px;
+		height: 60vh;
 		margin: $marginAlbum;
 		background-color: $backgroundAlbum;
 		color: white;
 		padding: 20px;
 		border-radius: 10px;
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
@@ -29,4 +31,8 @@ main{
 			}
 		}
 	}
+
 }
+
+@include mediaQuery;
+

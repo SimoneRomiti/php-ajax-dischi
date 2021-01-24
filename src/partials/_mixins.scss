@@ -1,0 +1,30 @@
+@mixin mediaQuery{
+
+	@media screen and(max-width: 1300px){
+		
+		main{
+			padding: 0 15%;
+			.album{
+				width: 200px;
+			}
+		}
+
+	}
+
+		@media screen and(max-width: 1115px){
+
+		main{
+			padding: 0 5%;
+		}
+
+	}
+
+	@media screen and(max-width: 577px){
+
+		header{
+			padding: 0;
+			justify-content: center;
+		}
+
+	}
+}
