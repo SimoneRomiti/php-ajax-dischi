@@ -1,7 +1,16 @@
 <?php
 
+	$newArray = [];
+	function filtered($selection, $array){
+		foreach ($array as $value) {
+			if($value["genre"] == $selection){
+				$new[] = $value;
+			}
+		}
+		return $new;
+	}
 
-	
+	$genre = $_GET["genre"];
 	$database = [
 		[
 			"poster" => "https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg",
@@ -75,11 +84,14 @@
 		]
 	];
 
-	$genre = $_GET["genre"];
+	if($genre == 'ALL' || $genre == ''){
+		$newArray = $database;
+	} else{
+		$newArray = filtered($genre, $database);
+	}
 
-
-
-
+	
 	header('Content-Type: application/json');
-	echo json_encode($database);
+	echo json_encode($newArray);
+
 ?>

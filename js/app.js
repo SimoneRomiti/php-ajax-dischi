@@ -1850,15 +1850,33 @@ var axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js").de
 var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   el: "#container",
   data: {
-    database: []
+    database: [],
+    genre: "ALL"
   },
   created: function created() {
     var _this = this;
 
     axios.get('server.php').then(function (response) {
       _this.database = response.data;
-      console.log(_this.database);
     });
+  },
+  methods: {
+    select: function select() {
+      var _this2 = this;
+
+      axios.get('server.php', {
+        params: {
+          "genre": this.genre
+        }
+      }).then(function (response) {
+        _this2.database = response.data;
+      });
+    },
+    onSubmit: function onSubmit(event) {
+      if (event) {
+        event.preventDefault();
+      }
+    }
   }
 });
 

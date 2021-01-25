@@ -15,10 +15,10 @@
 		<?php include "template/header.php"; ?>
 		<!-- /header -->
 
-		<form action="server.php" method="get">
+		<form v-on:submit.prevent="onSubmit" action="server.php" method="get">
 			<div class="selection">
 				<label for="">SELEZIONA GENERE</label>
-				<select name="genre" id="">
+				<select name="genre" id="" v-model="genre">
 					<option value="ALL">ALL</option>
 					<option value="Pop">Pop</option>
 					<option value="Jazz">Jazz</option>
@@ -26,7 +26,7 @@
 					<option value="Rock">Rock</option>
 				</select>
 				<div class="button">
-					<button type="submit">INVIA</button>
+					<button @click="select()"  type="submit">INVIA</button>
 				</div>
 
 			</div>

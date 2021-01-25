@@ -20,6 +20,10 @@ body {
   padding: 5px 10px;
 }
 
+.button button {
+  padding: 5px;
+}
+
 header {
   height: 10vh;
   background-color: rgba(0, 0, 0, 0.5);
