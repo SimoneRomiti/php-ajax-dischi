@@ -7,13 +7,13 @@ var app = new Vue(
 		data: {
 			database: []
 		},
-		mounted: function(){
+		created: function(){
 			axios
-				.get('http://localhost:8888/php-ajax-dischi/server.php')
-				.then((response) => {
-					this.database = response.data
-					console.log(this.database);
-				})
+			.get('server.php')
+			.then((response) => {
+				this.database = response.data
+				console.log(this.database);
+			})
 
 		}
 	}

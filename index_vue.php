@@ -15,16 +15,22 @@
 		<?php include "template/header.php"; ?>
 		<!-- /header -->
 
-		<div class="selection">
-			<label for="">SELEZIONA GENERE</label>
-			<select name="" id="">
-				<option value="">ALL</option>
-				<option value="">Pop</option>
-				<option value="">Jazz</option>
-				<option value="">Metal</option>
-				<option value="">Rock</option>
-			</select>
-		</div>
+		<form action="server.php" method="get">
+			<div class="selection">
+				<label for="">SELEZIONA GENERE</label>
+				<select name="genre" id="">
+					<option value="ALL">ALL</option>
+					<option value="Pop">Pop</option>
+					<option value="Jazz">Jazz</option>
+					<option value="Metal">Metal</option>
+					<option value="Rock">Rock</option>
+				</select>
+				<div class="button">
+					<button type="submit">INVIA</button>
+				</div>
+
+			</div>
+		</form>
 
 
 		<!-- main -->

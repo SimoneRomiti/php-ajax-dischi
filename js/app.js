@@ -1852,10 +1852,10 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   data: {
     database: []
   },
-  mounted: function mounted() {
+  created: function created() {
     var _this = this;
 
-    axios.get('http://localhost:8888/php-ajax-dischi/server.php').then(function (response) {
+    axios.get('server.php').then(function (response) {
       _this.database = response.data;
       console.log(_this.database);
     });
