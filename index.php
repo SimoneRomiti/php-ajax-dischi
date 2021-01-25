@@ -1,3 +1,5 @@
+<?php include "db.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -9,8 +11,6 @@
 </head>
 
 <body>
-
-  <?php include "db.php"; ?>
 
   <!-- header -->
   <?php include "template/header.php"; ?>
