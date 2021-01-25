@@ -17,11 +17,14 @@ body{
   select{
     width: 80px;
     padding: 5px 10px;
+    @include hover;
   }
 }
 
 .button{
   button{
     padding: 5px;
+    background-color: white;
+    @include hover;
   }
 }

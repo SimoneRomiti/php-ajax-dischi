@@ -19,9 +19,18 @@ body {
   width: 80px;
   padding: 5px 10px;
 }
+.selection select:hover {
+  cursor: pointer;
+  background-color: #cccccc;
+}
 
 .button button {
   padding: 5px;
+  background-color: white;
+}
+.button button:hover {
+  cursor: pointer;
+  background-color: #cccccc;
 }
 
 header {

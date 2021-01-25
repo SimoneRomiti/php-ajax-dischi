@@ -28,7 +28,6 @@
 				<div class="button">
 					<button @click="select()"  type="submit">INVIA</button>
 				</div>
-
 			</div>
 		</form>
 

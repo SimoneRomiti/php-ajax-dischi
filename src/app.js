@@ -8,6 +8,7 @@ var app = new Vue(
 			database: [],
 			genre: "ALL"
 		},
+
 		created: function(){
 			axios
 			.get('server.php')
@@ -15,6 +16,7 @@ var app = new Vue(
 				this.database = response.data	
 			})
 		},
+		
 		methods: {
 			select: function(){
 				axios

@@ -90,7 +90,6 @@
 		$newArray = filtered($genre, $database);
 	}
 
-	
 	header('Content-Type: application/json');
 	echo json_encode($newArray);
 
