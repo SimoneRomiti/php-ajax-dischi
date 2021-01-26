@@ -35,19 +35,19 @@
 		<!-- main -->
 		<main>
 			<div v-for="(element, index) in database" class="album">
-				<img :src="database[index].poster" alt="">
+				<img :src="element.poster" alt="">
 				<div class="title">
-					<h3>{{ database[index].title }}</h3>
+					<h3>{{ element.title }}</h3>
 				</div>
 				<div class="genre">
-					<i>{{ database[index].genre }}</i>
+					<i>{{ element.genre }}</i>
 				</div>
 				<div class="author-year">
 					<div class="author">
-						{{ database[index].author }}
+						{{ element.author }}
 					</div>
 					<div class="year">
-						{{ database[index].year }}
+						{{ element.year }}
 					</div>
 				</div>
 			</div>
