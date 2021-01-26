@@ -15,7 +15,10 @@
 		<?php include "template/header.php"; ?>
 		<!-- /header -->
 
-		<form v-on:submit.prevent="onSubmit" action="server.php" method="get">
+
+		<!-- form commentato non serve passare il parametro al server con il submit, il parametro viene passato al server con la seconda chiamata axios al click di button e da li viene recuperato con il get e filtrato il database -->
+
+		<!-- <form v-on:submit.prevent="onSubmit" action="server.php" method="get"> -->
 			<div class="selection">
 				<label for="">SELEZIONA GENERE</label>
 				<select name="genre" id="" v-model="genre">
@@ -26,10 +29,10 @@
 					<option value="Rock">Rock</option>
 				</select>
 				<div class="button">
-					<button @click="select()"  type="submit">INVIA</button>
+					<button @click="select()"  type="button">INVIA</button>
 				</div>
 			</div>
-		</form>
+		<!-- </form> -->
 
 
 		<!-- main -->

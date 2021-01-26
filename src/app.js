@@ -30,6 +30,7 @@ var app = new Vue(
 					this.database = response.data
 				})
 			},
+			// funzione per non far ricaricare la pagina al sumbit del form
 			onSubmit: function(event) {
 				if(event) {
 					event.preventDefault();

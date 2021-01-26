@@ -1872,6 +1872,7 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
         _this2.database = response.data;
       });
     },
+    // funzione per non far ricaricare la pagina al sumbit del form
     onSubmit: function onSubmit(event) {
       if (event) {
         event.preventDefault();
