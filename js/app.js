@@ -1851,8 +1851,10 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   el: "#container",
   data: {
     database: [],
+    // variabile sincronizzata con v-model alla select
     genre: "ALL"
   },
+  // chiamata axios al database appena creata la pagina, senza parametri quindi verrà stampato tutto il database
   created: function created() {
     var _this = this;
 
@@ -1861,6 +1863,7 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
     });
   },
   methods: {
+    // funzione che parte al click del pulsante che fa una chiamata Axios passando come parametro il valore della select
     select: function select() {
       var _this2 = this;
 

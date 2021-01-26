@@ -36,6 +36,7 @@
 
 
 		<!-- main -->
+		<!-- main creato con Vue attraverso database che ha come valore il database JSON della chiamata Axios, al click del pulsante della select parte una nuova chiamata Axios che cambia il valore della variabile Vue database e quindi Vue riscrive il dom in base al nuovo database -->
 		<main>
 			<div v-for="(element, index) in database" class="album">
 				<img :src="element.poster" alt="">

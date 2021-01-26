@@ -1,3 +1,4 @@
+<!-- includo il database -->
 <?php include "db.php"; ?>
 
 <!DOCTYPE html>
@@ -17,7 +18,7 @@
   <!-- /header -->
 
   <div class="selection">
-    <label for="">SELEZIONA GENERE</label>
+    <label for="">SELECT FUNZIONANTE IN INDEX_VUE.PHP</label>
     <select name="" id="">
       <option value="">ALL</option>
       <option value="">Pop</option>

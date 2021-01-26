@@ -1,9 +1,11 @@
 <main>
   <?php
+  // scorro il databse
   foreach ($database as $key => $value) {
   ?>
 
     <div class="album">
+    <!-- scorrendo il databse inserisco i giusti valori dei sottoarray, ogni sottoarray è un album -->
       <img src="<?php echo $value["poster"] ?> " alt="">
 
       <div class="title">

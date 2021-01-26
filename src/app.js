@@ -6,9 +6,11 @@ var app = new Vue(
 		el: "#container",
 		data: {
 			database: [],
+			
+			// variabile sincronizzata con v-model alla select
 			genre: "ALL"
 		},
-
+		// chiamata axios al database appena creata la pagina, senza parametri quindi verrà stampato tutto il database
 		created: function(){
 			axios
 			.get('server.php')
@@ -18,6 +20,7 @@ var app = new Vue(
 		},
 		
 		methods: {
+			// funzione che parte al click del pulsante che fa una chiamata Axios passando come parametro il valore della select
 			select: function(){
 				axios
 				.get('server.php',

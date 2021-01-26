@@ -1,6 +1,8 @@
 <?php
 
 	$newArray = [];
+
+	// definizione funzione per filtrare database in base al genere selezionato
 	function filtered($selection, $array){
 		foreach ($array as $value) {
 			if($value["genre"] == $selection){
@@ -10,7 +12,9 @@
 		return $new;
 	}
 
+	// variabile genre passata al server attraverso il parametro della chiamata axios al click del pulsante
 	$genre = $_GET["genre"];
+
 	$database = [
 		[
 			"poster" => "https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg",
@@ -84,12 +88,14 @@
 		]
 	];
 
+	// if per restituire tutto il database se il parametro è vuoto o 'ALL' altrimenti filtro in base al genere selezionato richiamando la funzione
 	if($genre == 'ALL' || $genre == ''){
 		$newArray = $database;
 	} else{
 		$newArray = filtered($genre, $database);
 	}
 
+	// comando per trasformare il database PHP in formato JSON in modo da farlo leggere a Javascript
 	header('Content-Type: application/json');
 	echo json_encode($newArray);
 
