@@ -1,4 +1,4 @@
-import Vue from 'vue';
+import Vue from 'vue/dist/vue.js';
 const axios = require('axios').default;
 
 var app = new Vue(
@@ -11,9 +11,14 @@ var app = new Vue(
 			genre: "ALL"
 		},
 		// chiamata axios al database appena creata la pagina, senza parametri quindi verrà stampato tutto il database
-		created: function(){
+		mounted: function(){
 			axios
-			.get('server.php')
+				.get('server.php',
+					{
+						params: {
+							"genre": this.genre
+						}
+					})
 			.then((response) => {
 				this.database = response.data	
 			})
